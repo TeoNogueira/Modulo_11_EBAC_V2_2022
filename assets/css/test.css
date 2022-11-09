@@ -1,0 +1,12 @@
+
+:root {
+
+ --clr-: #bdcc99;
+
+}
+
+.active-h1 {
+
+   color:  var(--clr-);
+}
+

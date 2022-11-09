@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/libs/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./assets/libs/owl/owl.css"> 
+    <link rel="stylesheet" href="./assets/libs/jqueryUI/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JQuery</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark static-top  zindex-before">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/img/header-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prod-link" rel="produto">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-modal-open-about"  href="about.html" rel="sobre" data-bs-toggle="modal" data-bs-target="#modelIdTwo">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-modal-open"  href="contact.html" rel="contato" data-bs-toggle="modal" data-bs-target="#modelId">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>Ecommerce HTML Template</h2>
+                        <div class="line-dec"></div>
+                        <p>HTML Template can be converted into your desired CMS theme. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- CAROUSEL FEATURED -->
+    <div id="featured" class="featured-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Destaques</h1>
+                    </div>
+                </div>
+                <div class="col-md-12" id="prod-link">
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item">
+                            <img src="./assets/img/item-01.jpg" alt="Item 1">
+                            <h4>Produto 1</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-02.jpg" alt="Item 2">
+                            <h4>Produto 2</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-03.jpg" alt="Item 3">
+                            <h4>Produto 3</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-04.jpg" alt="Item 4">
+                            <h4>Produto 4</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-05.jpg" alt="Item 5">
+                            <h4>Produto 5</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-06.jpg" alt="Item 6">
+                            <h4>Produto 6</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-04.jpg" alt="Item 7">
+                            <h4>Produto 7</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-05.jpg" alt="Item 8">
+                            <h4>Produto 8</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./assets/img/item-06.jpg" alt="Item 9">
+                            <h4>Produto 9</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- FORM -->
+    <div class="bg-dark mt-5 divine">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row row-custom d-flex justify-content-center bg-customize rounded ">
+                <div class="col-md-8 off-set-md-2">
+                    <div class="main-content ">
+                        
+                        <p class="pt-5  text-center text-white paragraph_none">Insira seus dados abaixo para receber mais informações atualizadas de nossos produtos</p>
+                        <p class="pt-5  text-center text-white d-none paragraph">Cadastre-se digitando o seu e-mail e receba informações dos nossos produtos</p>
+                        
+                        <form id="subscribe" class="form mb-3 d-flex justify-content-center pt-2 " action="" method="get">
+                            <div class="row modify-media ">
+                                <div class="col-md-9 ">
+                                    <fieldset>
+                                        <input type="text" name="email" class="form-control d-flex align-items-center modify-dis" id="email" placeholder="Digite seu email">
+                                    </fieldset>
+                                    
+                                </div>
+                                <div class="col-md-3 ">
+                                    <fieldset>
+                                        <input type="submit" id="form-submit" class="button btn btn-dark">
+                                    </fieldset>
+                                    
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo">
+                    <img src="assets/img/header-logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#prod-link">Produtos</a></li>
+                        <li><a href="#sobre" rel="sobre" class="nav-modal-open-about"
+                            data-bs-toggle="modal" data-bs-target="#modelIdTwo">Sobre</a></li>
+                        <!-- <li><a href="#">How It Works ?</a></li> -->
+                        <li><a href="#contato" rel="contato" class="nav-modal-open"
+                            data-bs-toggle="modal" data-bs-target="#modelId">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://github.com/TeoNogueira" target="_blank"><i class="fa fa-github"></i></a></li>
+                 
+                        <li><a href="https://www.linkedin.com/in/teonogueira/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sub-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright-text">
+                    <p>WebStore &copy; Todos os direitos reservados
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Button trigger modal
+    
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+        Launch
+    </button> -->
+    
+    <!-- Modal FORM  -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="contato" class="">
+
+                        
+                        <form action="post" class="form">
+
+                            <div class="mb-3">
+                              <label for="nome" class="form-label">Nome</label>
+                              <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                              <small id="helpNome" class="text-muted">
+                                  Digite um nome válido
+                              </small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                                <small id="helpEmail" class="text-muted">
+                                    Digite um e-mail válido
+                                </small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="text" name="date" id="date" class="form-control" placeholder="Digite sua data" aria-describedby="helpDate">
+                                <small id="helpDate" class="text-muted">
+                                    Digite uma data válida
+                                </small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="time" class="form-label">Time</label>
+                                <input type="text" name="time" id="time" class="form-control" placeholder="Digite sua hora" aria-describedby="helpTime">
+                                <small id="helpTime" class="text-muted">
+                                    Digite uma tempo válido
+                                </small>
+                            </div>
+                        
+
+                            <div class="mb-3">
+                                <label for="cep" class="form-label">CEP</label>
+                                <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCEP">
+                                <small id="helpCEP" class="text-muted">
+                                    Digite um CEP válido
+                                </small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu telefone" aria-describedby="helpPhone">
+                                <small id="helpPhone" class="text-muted">
+                                    Digite um telefone válido
+                                </small>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">CPF</label>
+                                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" aria-describedby="helpCPF">
+                                <small id="helpCPF" class="text-muted">
+                                    Digite um cpf válido
+                                </small>
+                            </div>
+                
+
+
+                            <button type="submit" class="btn btn-primary " >Enviar</button>
+                
+                
+                        </form>
+                   
+                    </div><!-- contato end -->
+                    
+                    
+                </div><!-- MODAL-BODY-END -->
+               
+            </div>
+        </div>
+    </div>
+  
+
+
+    <!--  sobre   -->
+
+
+
+ 
+    <!-- Modal -->
+    <div class="modal fade" id="modelIdTwo" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sobre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div id="sobre" class="">
+                        <h2></h2>
+                    <p>lorem ipsum dolor lorem, consectetur adipisicing elit lorem, sed diam nonumy Lorem ipsum dolor sit amet lorem ipsum dolor</p>
+                    <p>lorem ipsum dolor lorem, consectetur adipisicing elit lorem, sed diam nonumy Lorem ipsum dolor sit amet lorem ipsum dolor</p>
+                        
+                    </div>
+                    
+                </div><!-- MODAL-BODY-END -->
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    
+    <script src="./assets/libs/jquery/jquery.min.js"></script>
+    
+    <script src="./assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/libs/owl/owl.js"></script>
+    <script src="./assets/libs/jqueryMask/jquery.mask.min.js"></script>
+    <script src="./assets/libs/jqueryUI/jquery-ui.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+    <script src="./assets/libs/jquery/scripts.js"></script>
+
+
+</body>
+</html>
