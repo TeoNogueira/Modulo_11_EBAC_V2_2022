@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(68, 68, 97);
+    
+}
+
+header h1 {
+    color: #fff;
+    padding: 8px;
+    user-select: none;
+    
+}
+header h1:hover {
+
+    cursor: pointer;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    text-decoration: none;
+    
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.biography {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 24px;
+}
+
+.biography p {
+    border-top: 2px solid rgb(68, 68, 97);;
+}
+
+.biography img {
+    margin-right: 8px;
+}
+
+.prod h2 {
+    padding: 8px;
+    margin: 24px;
+}
+
+.prod img {
+    max-width: 100%;
+    margin-top: 8px;
+} 
+
+.prod ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin: 24px;
+    list-style: none;
+    border-top: 2px solid rgb(68, 68, 97);
+}
+
+.prod li p {
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: rgb(162, 94, 22);
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 767px){
+    .biography {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .biography img {
+        display: block;
+        font-size: 1.5em;
+        margin-right: 0;
+    }
+
+    .biography h2 {
+        margin-top: 16px;
+    }
+
+    .biography p {
+        margin-top: 16px;
+    }
+
+    .prod ul {
+        display: block;
+        margin-bottom: 32px;
+        padding-left: 0;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+}
+
+/* Tshirts */
+
+.main-nike {
+
+    width: 330px;
+    height: 330px;
+    border-radius: 4px;
+}
+.tshirts {
+
+    width: 220px;
+    height: 220px;
+}
+
+
+/* footer */
+
+
+footer {
+    width: 100%;
+    background-color: #090a0e;
+    height: 90px;
+
+}
+
+
+
+/* Medias */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .biography img {
+        font-size: 1.6em;
+    }
+
+    .prod ul {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+}
+
